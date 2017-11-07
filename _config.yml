@@ -39,16 +39,16 @@ footer:
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-   - title: facebook
-    url: http://www.facebook.com/lsiddiqsunny
-
+  
+  - title: facebook
+    url: https://www.facebook.com/lsiddiqsunny
+  - title: stack-overflow
+    url: https://stackoverflow.com/users/7226247/latif-siddiq-sunny
   - title: github
     url: http://github.com/lsiddiqsunny
-- title: linkedin
-  url: http://www.linkedin.com/in/lsiddiqsunny
-  - title: stack-overflow
-    url: http://stackoverflow.com/lsiddiqsunny
-
+  - title: linkedin
+    url: https://www.linkedin.com/in/lsiddiqsunny/
+    
 
 # Postal address (add as many lines as necessary)
 address:
