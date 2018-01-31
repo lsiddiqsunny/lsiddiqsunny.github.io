@@ -27,7 +27,7 @@ body{
 }
 .container {
     width: 80%;
-    height:1800px;
+    height:1900px;
 
     margin: auto;
 
@@ -35,7 +35,7 @@ body{
 }
 .one {
     width: 80%;
-    height: 1800px;
+    height: 1900px;
     background: white;
     float: left;
 color: #3e444f;
@@ -47,7 +47,7 @@ color: #3e444f;
 .two {
 
     margin-left: 20%;
-    height:1800px;
+    height:1900px;
     background: white;
     overflow: hidden;
 
