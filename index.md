@@ -1,9 +1,7 @@
-# Home
-
-## About me
+# About me
 Hey! I am **Latif Siddiq Sunny** from **Bangladesh**. Currently, I am undergraduate student in **Bangladesh University of Engineering and Technology**. My major topic is **Computer Science and Engineering**.
 
-## Project
+# Project
 
 I have done several project till now.
 Here is list:
@@ -21,20 +19,20 @@ lood needing people.
 11. [Mancala Game](https://github.com/lsiddiqsunny/CSE-318-Artificial-Intelligence-Sessional/tree/master/Offline%204): Mancala game simulation by alpha-beta pruning.
 12. [AI related games](https://github.com/lsiddiqsunny/CSE-318-Artificial-Intelligence-Sessional) : Simulation of some game using basic AI technique.
 
-## Undergoing project
+# Undergoing project
 We,a team of 12 people are now working on a project for making an application for teaching language to various sector of the people.
 
-## Thesis
+# Thesis
 My undergoing thesis work can be found here : [Thesis](http://lsiddiqsunny.me/Undergraduate-Thesis/)
 
-## Notes
+# Notes
 
 Some notes on various topics :
 1. [Object oriented programming](http://lsiddiqsunny.me/Object-Oriented-Programming/)
 2. [Competitive programming](https://github.com/lsiddiqsunny/Days-with-programming)
 3. [CLRS Revisited](https://bitbucket.org/lsiddiqsunny/introduction-to-algorithms-clrs-revisited/src/master/)
 
-## Contact
+# Contact
 
 You can find me on :
 1. [Facebook](https://www.facebook.com/lsiddiqsunny)
