@@ -9,7 +9,7 @@ Here is list:
 2. [Online Blood Bank](https://github.com/lsiddiqsunny/Online-blood-bank) : A **javafx** project to help b
 lood needing people.
 3. [Online Book sharing platform](https://github.com/lsiddiqsunny/Database_project_GUI) : A **javafx** project by using **Oracle Database**.
-4. [Matro-rail Ticketing](https://github.com/lsiddiqsunny/ATMEGA32-Project) : A microcontroller project by **Atmega32**, **espnodemcu**,**RFID Module** and **GSM Module** to buy matro rail ticket.
+4. [Metro-rail Ticketing](https://github.com/lsiddiqsunny/ATMEGA32-Project) : A microcontroller project by **Atmega32**, **espnodemcu**,**RFID Module** and **GSM Module** to buy metro rail ticket.
 5. [C compiler](https://github.com/lsiddiqsunny/C-compiler): A partial **C compiler** made by **bison**,**flex**.
 6. [Dictionary Attack](https://github.com/lsiddiqsunny/Dictionary-attack) : A simulation of **dictionary attack** on a local website.
 7. [Works with ns2](https://github.com/lsiddiqsunny/Network-Simulation-on-NS2) : Modifying tools on **Network simulator**.
