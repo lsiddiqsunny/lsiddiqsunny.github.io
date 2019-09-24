@@ -1,9 +1,9 @@
 # About me
-Hey! I am **Latif Siddiq Sunny** from **Bangladesh**. Currently, I am undergraduate student in **Bangladesh University of Engineering and Technology(BUET)**. My major topic is **Computer Science and Engineering**.
+Hey! I am **Latif Siddiq Sunny** from **Bangladesh**. Currently, I am an undergraduate student at **Bangladesh University of Engineering and Technology(BUET)**. My major topic is **Computer Science and Engineering**.
 
 # Project
 
-I have done several project till now.
+I have done several projects untill now.
 Here is list:
 1. [Sapludu](https://github.com/lsiddiqsunny/Project-sapludu) : An **opengl** game which simulated a version of snake-ladder game.
 2. [Online Blood Bank](https://github.com/lsiddiqsunny/Online-blood-bank) : A **javafx** project to help b
@@ -20,7 +20,7 @@ lood needing people.
 12. [AI related games](https://github.com/lsiddiqsunny/CSE-318-Artificial-Intelligence-Sessional) : Simulation of some game using basic **AI technique**.
 
 # Undergoing project
-We,a team of 12 people are now working on a project for making an application for **teaching language** to various sector of the people.
+We, a team of 12 people are now working on a project for making an application for **teaching language** to various sector of the people.
 
 # Thesis
 My undergoing thesis work can be found here : [Thesis](http://lsiddiqsunny.me/Undergraduate-Thesis/)
