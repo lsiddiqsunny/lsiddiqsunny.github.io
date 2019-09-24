@@ -20,6 +20,7 @@ lood needing people.
 10. [XV6 operating system](https://github.com/lsiddiqsunny/xv6-public) : Implimenting **socket**,[paging](https://github.com/lsiddiqsunny/xv6-paging) and **adding new system call** in XV6
 11. [Mancala Game](https://github.com/lsiddiqsunny/CSE-318-Artificial-Intelligence-Sessional/tree/master/Offline%204): Mancala game simulation by **alpha-beta pruning**.
 12. [AI related games](https://github.com/lsiddiqsunny/CSE-318-Artificial-Intelligence-Sessional) : Simulation of some game using basic **AI technique**.
+13. [DES](https://github.com/lsiddiqsunny/CSE406-Computer-Security-Sessional/tree/master/Offline%201/1505069/Problem%202) : Implimentation of DES(Data Encryption Standard)
 
 ## Undergoing project
 
