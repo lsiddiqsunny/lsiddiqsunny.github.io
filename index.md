@@ -46,3 +46,5 @@ You can find me on :
 2. [Linkedin](https://www.linkedin.com/in/lsiddiqsunny)
 3. [Quora](https://www.quora.com/profile/Latif-Siddiq-Sunny)
 4. [Medium](https://medium.com/@lsiddiqsunny)
+
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
