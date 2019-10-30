@@ -35,15 +35,16 @@ My undergoing thesis work can be found here : [Thesis](http://lsiddiqsunny.me/Un
 
 Some notes on various topics :
 
-1. [Object oriented programming](http://lsiddiqsunny.me/Object-Oriented-Programming/)
-2. [Competitive programming](https://github.com/lsiddiqsunny/Days-with-programming)
-3. [CLRS Revisited](https://bitbucket.org/lsiddiqsunny/introduction-to-algorithms-clrs-revisited/src/master/)
-
+- [Object oriented programming](http://lsiddiqsunny.me/Object-Oriented-Programming/)
+- [Competitive programming](https://github.com/lsiddiqsunny/Days-with-programming)
+- [CLRS Revisited](https://bitbucket.org/lsiddiqsunny/introduction-to-algorithms-clrs-revisited/src/master/)
+- [Linux command line](http://lsiddiqsunny.me/Linux-Command-Line/)
+  
 ## Contact
 
 You can find me on :
 
-1. [Facebook](https://www.facebook.com/lsiddiqsunny)
-2. [Linkedin](https://www.linkedin.com/in/lsiddiqsunny)
-3. [Quora](https://www.quora.com/profile/Latif-Siddiq-Sunny)
-4. [Medium](https://medium.com/@lsiddiqsunny)
+- [Facebook](https://www.facebook.com/lsiddiqsunny)
+- [Linkedin](https://www.linkedin.com/in/lsiddiqsunny)
+- [Quora](https://www.quora.com/profile/Latif-Siddiq-Sunny)
+- [Medium](https://medium.com/@lsiddiqsunny)
