@@ -1,4 +1,4 @@
-# About me
+## About me
 
 Hey! I am **Latif Siddiq Sunny** from **Bangladesh**. Currently, I am an undergraduate student at **Bangladesh University of Engineering and Technology(BUET)**. My major topic is **Computer Science and Engineering**.
 
