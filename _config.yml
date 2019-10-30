@@ -1,11 +1,14 @@
 title: Latif Siddiq Sunny
+author: lsiddiqsunny
+email: lsiddiqsunny@gmail.com
 description: Welcome to my personal site
 google_analytics:
-theme: jekyll-theme-leap-day
-
+theme: minima
+github_username:  lsiddiqsunny
 social:
   name: Latif Siddiq Sunny
   links:
     - https://www.facebook.com/lsiddiqsunny
     - https://www.linkedin.com/in/lsiddiqsunny
     - https://github.com/lsiddiqsunny
+show_excerpts: true # set to false to remove excerpts on the homepage
