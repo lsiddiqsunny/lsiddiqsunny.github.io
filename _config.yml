@@ -1,8 +1,9 @@
 title: Latif Siddiq Sunny
+author: lsiddiqsunny
 email: lsiddiqsunny@gmail.com
-description: My personal site
+description: Welcome to my personal site
 google_analytics:
-theme: minima
+theme: jekyll-theme-leap-day
 github_username:  lsiddiqsunny
 social:
   name: Latif Siddiq Sunny
