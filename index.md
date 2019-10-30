@@ -1,8 +1,7 @@
-# About me
 
 Hey! I am **Latif Siddiq Sunny** from **Bangladesh**. Currently, I am an undergraduate student at **Bangladesh University of Engineering and Technology(BUET)**. My major topic is **Computer Science and Engineering**.
 
-# Project
+## Project
 
 I have done several projects untill now.
 Here is the list:
@@ -23,15 +22,15 @@ lood needing people. Used tool : Java, socket i/o, threading, java fx
 13. [AI related games](https://github.com/lsiddiqsunny/CSE-318-Artificial-Intelligence-Sessional) : Simulation of some game using basic **AI technique**. Used tool : c++
 14. [DES](https://github.com/lsiddiqsunny/CSE406-Computer-Security-Sessional/tree/master/Offline%201/1505069/Problem%202) : Implimentation of DES(Data Encryption Standard) Used tool : python3
 
-# Undergoing project
+## Ongoing project
 
 We, a team of 12 people are now working on a project for making an application for **teaching language** to various sector of the people.Used tool : laravel, flutter, gitkraken, php, mysql database, java script, dart
 
-# Thesis
+## Thesis
 
 My undergoing thesis work can be found here : [Thesis](http://lsiddiqsunny.me/Undergraduate-Thesis/)
 
-# Notes
+## Notes
 
 Some notes on various topics :
 
@@ -40,7 +39,7 @@ Some notes on various topics :
 - [CLRS Revisited](https://bitbucket.org/lsiddiqsunny/introduction-to-algorithms-clrs-revisited/src/master/)
 - [Linux command line](http://lsiddiqsunny.me/Linux-Command-Line/)
   
-# Contact
+## Contact
 
 You can find me on :
 
