@@ -32,6 +32,10 @@ We, a team of 12 people are now working on a project for making an application f
 
 My undergoing thesis work can be found here : [Thesis](http://lsiddiqsunny.me/Undergraduate-Thesis/)
 
+# Portfolio
+
+You can find my portfolio here : [Portfolio](https://lsiddiqsunny.azurewebsites.net/)
+
 # Notes
 
 Some notes on various topics :
