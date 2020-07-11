@@ -23,14 +23,7 @@ lood needing people. Used tool : Java, socket i/o, threading, java fx
 - [Mancala Game](https://github.com/lsiddiqsunny/CSE-318-Artificial-Intelligence-Sessional/tree/master/Offline%204): Mancala game simulation by **alpha-beta pruning**. Used tool : c++
 - [AI related games](https://github.com/lsiddiqsunny/CSE-318-Artificial-Intelligence-Sessional) : Simulation of some game using basic **AI technique**. Used tool : c++
 - [DES](https://github.com/lsiddiqsunny/CSE406-Computer-Security-Sessional/tree/master/Offline%201/1505069/Problem%202) : Implimentation of DES(Data Encryption Standard) Used tool : python3
-
-# Ongoing project
-
-We, a team of 12 people are now working on a project for making an application for **teaching language** to various sector of the people.Used tool : laravel, flutter, gitkraken, php, mysql database, java script, dart
-
-# Thesis
-
-My undergoing thesis work can be found here : [Thesis](http://lsiddiqsunny.me/Undergraduate-Thesis/)
+- VashaShikkha : An application for **teaching language** to various sector of the people.Used tool : laravel, flutter, gitkraken, php, mysql database, java script, dart
 
 # Portfolio
 
