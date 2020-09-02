@@ -33,10 +33,10 @@ You can find my portfolio here : [Portfolio](https://lsiddiqsunny.azurewebsites.
 
 Some notes on various topics :
 
-- [Object oriented programming](http://lsiddiqsunny.me/Object-Oriented-Programming/)
+- [Object oriented programming](https://lsiddiqsunny.github.io/Object-Oriented-Programming/)
 - [Competitive programming](https://github.com/lsiddiqsunny/Days-with-programming)
 - [CLRS Revisited](https://bitbucket.org/lsiddiqsunny/introduction-to-algorithms-clrs-revisited/src/master/)
-- [Linux command line](http://lsiddiqsunny.me/Linux-Command-Line/)
+- [Linux command line](https://lsiddiqsunny.github.io/Linux-Command-Line/)
   
 # Contact
 
