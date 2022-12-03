@@ -92,16 +92,16 @@
         </style>
     </head>
     <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
         <script>
-const logFileText = async file => {
-    const response = await fetch(file)
-    const text = await response.text()
-    movie_list = text.split(/\r?\n/)
-    console.log(_.sample(movie_list,5))
-}
+        const logFileText = async file => {
+            const response = await fetch(file)
+            const text = await response.text()
+            movie_list = text.split(/\r?\n/)
+            
+        }
 
-logFileText('movies.txt')
+        logFileText('movies.txt')
         </script>
         <!-- navbar include -->
         <div w3-include-html="navbar.html"></div>
@@ -133,8 +133,9 @@ logFileText('movies.txt')
         <script src="js/main.js"></script>
         <script>
 function myFunction() {
-  document.getElementById("demo").innerHTML= "red";
-}
+    movies = _.sampleSize(movie_list,5)
+  document.getElementById("demo").innerHTML= "<ul> <li>" + movies.join("</li><li>") + "</li></ul>";
+  }
         </script>
     </body>
 </html>
