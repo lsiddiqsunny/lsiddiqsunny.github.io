@@ -96,7 +96,8 @@
 const logFileText = async file => {
     const response = await fetch(file)
     const text = await response.text()
-    console.log(text.split(/\r?\n/)[0])
+    movie_list = text.split(/\r?\n/)
+    console.log(_.sample(movie_list,5))
 }
 
 logFileText('movies.txt')
