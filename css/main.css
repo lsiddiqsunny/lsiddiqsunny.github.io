@@ -530,6 +530,7 @@ dd {
 /* Pop-up styles */
 .popup {
   display: none; /* Hidden by default */
+  visibility: hidden;
   position: fixed;
   top: 0;
   left: 0;
@@ -563,17 +564,26 @@ dd {
   border: none;
 }
 
-.close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  font-size: 20px;
-  color: #999;
+/* Close button style */
+.popup .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
-.close:hover {
-  color: #333;
+/* Close button on hover */
+.popup .close:hover,
+.popup .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Open the popup */
+.popup.open {
+  display: block;
+  visibility: visible;
 }
 
 /* Code block styling */

@@ -504,6 +504,8 @@ document.querySelectorAll('.openPopup').forEach(button => {
         const popupId = this.getAttribute('data-popup');
         const popup = document.getElementById(popupId);
         popup.style.display = 'flex';
+        popup.classList.add('open');
+        
     });
 });
 
@@ -512,7 +514,8 @@ document.querySelectorAll('.close').forEach(closeBtn => {
     closeBtn.addEventListener('click', function() {
         const popupId = this.getAttribute('data-popup');
         const popup = document.getElementById(popupId);
-        popup.style.display = 'none';
+      popup.classList.remove('open');
+        //popup.style.display = 'none';
     });
 });
 
@@ -521,7 +524,8 @@ window.addEventListener('click', function(event) {
     const popups = document.querySelectorAll('.popup');
     popups.forEach(popup => {
         if (event.target === popup) {
-            popup.style.display = 'none';
+            //popup.style.display = 'none';
+            event.target.classList.remove('open');
         }
     });
 });
