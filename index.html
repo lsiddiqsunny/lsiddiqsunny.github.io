@@ -124,8 +124,15 @@
             <p>
                 I worked with Dr. Anindya Iqbal, Professor, CSE, BUET, in the Software Engineering field as my undergrad thesis credit.
             </p>
+                
+             <b>Pro Bono Support for Bangladeshi Undergraduate Students</b> <button class="toggle-button" onclick="toggleText()">Show More</button>
+            
+            <div id="text-block" class="text-block">
+            <p>
+            As part of my commitment to giving back to the community, I am offering pro bono services to help undergraduate students from Bangladesh navigate their academic careers, especially those interested in pursuing graduate studies and research opportunities in the USA. My focus is on guiding students interested in computer science and engineering. <br>
 
-            <p> Want to talk:<br>
+If you'd like to discuss graduate study options, research opportunities, or receive guidance on applications, you can schedule an appointment using the link below. Although multiple slots are available on weekdays and weekends, I kindly ask that you try to choose a slot over the weekend or outside my office hours (9 AM to 6 PM) on weekdays. Due to time constraints, it is challenging for me to manage more than 5 to 6 hours per week for these sessions, so appointments will be approved based on my availability. <br> 
+
             <!-- Google Calendar Appointment Scheduling begin -->
 <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
 <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
@@ -142,7 +149,7 @@
   });
 })();
 </script>
-<!-- end Google Calendar Appointment Scheduling --> </p>
+<!-- end Google Calendar Appointment Scheduling --> </p> </div>
         <br>
         <h3 class="push-down-3">
             <span>Recent News</span>
@@ -211,5 +218,20 @@
 <script>w3IncludeHTML()</script>
 <!-- Local scripts -->
 <script src="js/main.js"></script>
+
+<script>
+    function toggleText() {
+        const textBlock = document.getElementById('text-block');
+        const button = document.querySelector('.toggle-button');
+        
+        if (textBlock.style.display === 'none' || textBlock.style.display === '') {
+            textBlock.style.display = 'block';
+            button.textContent = 'Show Less';
+        } else {
+            textBlock.style.display = 'none';
+            button.textContent = 'Show More';
+        }
+    }
+</script>
 </body>
 </html>

@@ -504,3 +504,24 @@ dd {
   background-color: #1585cf;
   opacity: .8;
 }
+
+
+/* Style the toggle button */
+.toggle-button {
+  cursor: pointer;
+  background-color: #039BE5;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Hidden text block by default */
+.text-block {
+  display: none;
+  padding: 15px;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
