@@ -582,7 +582,7 @@ dd {
 
 /* Open the popup */
 .popup.open {
-  display: block;
+  display: flex;
   visibility: visible;
 }
 

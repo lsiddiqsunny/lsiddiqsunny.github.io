@@ -503,7 +503,6 @@ document.querySelectorAll('.openPopup').forEach(button => {
     button.addEventListener('click', function() {
         const popupId = this.getAttribute('data-popup');
         const popup = document.getElementById(popupId);
-        popup.style.display = 'flex';
         popup.classList.add('open');
         
     });
