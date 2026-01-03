@@ -88,19 +88,6 @@ $(document).ready(function () {
 
 });
 
-function toggleText() {
-  const textBlock = document.getElementById('text-block');
-  const button = document.querySelector('.toggle-button');
-
-  if (textBlock.style.display === 'none' || textBlock.style.display === '') {
-    textBlock.style.display = 'block';
-    button.textContent = 'Show Less';
-  } else {
-    textBlock.style.display = 'none';
-    button.textContent = 'Show More';
-  }
-}
-
 // Google Calendar Appointment Scheduling
 (function () {
   window.addEventListener('load', function () {
@@ -116,39 +103,61 @@ function toggleText() {
   });
 })();
 
-// Popup and Clipboard Logic
+// Global Event Delegation for Robustness
 document.addEventListener('DOMContentLoaded', function () {
-  // Function to open a pop-up
-  document.querySelectorAll('.openPopup').forEach(button => {
-    button.addEventListener('click', function () {
-      const popupId = this.getAttribute('data-popup');
+
+  document.body.addEventListener('click', function (event) {
+    // Toggle Text (Show More/Less)
+    if (event.target.matches('.toggle-button')) {
+      // Check if this is the Copy button (which also has toggle-button class in some contexts? No, main.css says .toggle-button is separate)
+      // But wait, the copy-btn might have toggle-button class? Let's check main.css or just be specific.
+      // The toggleText button in index.html is <button class="toggle-button" ...>
+      // The copy button in research.html is <button class="copy-btn toggle-button" ...>
+      // Ah! The copy button ALSO has .toggle-button class in research.html: <button class="copy-btn toggle-button" data-copy="code19">Copy</button>
+      // This is a conflict!
+      // I should check if it is THE show more button or distinct them.
+      // The show more button calls toggleText() which toggles #text-block.
+      // The copy button copies text.
+
+      if (event.target.classList.contains('copy-btn')) {
+        // It is a copy button, handled below.
+        return;
+      }
+
+      const textBlock = document.getElementById('text-block');
+      if (textBlock) {
+        if (window.getComputedStyle(textBlock).display === 'none') {
+          textBlock.style.display = 'block';
+          event.target.textContent = 'Show Less';
+        } else {
+          textBlock.style.display = 'none';
+          event.target.textContent = 'Show More';
+        }
+      }
+    }
+
+    // Open Popup
+    if (event.target.matches('.openPopup')) {
+      const popupId = event.target.getAttribute('data-popup');
       const popup = document.getElementById(popupId);
       if (popup) popup.classList.add('open');
-    });
-  });
+    }
 
-  // Function to close a pop-up
-  document.querySelectorAll('.close').forEach(closeBtn => {
-    closeBtn.addEventListener('click', function () {
-      const popupId = this.getAttribute('data-popup');
+    // Close Popup (Button)
+    if (event.target.matches('.close')) {
+      const popupId = event.target.getAttribute('data-popup');
       const popup = document.getElementById(popupId);
       if (popup) popup.classList.remove('open');
-    });
-  });
+    }
 
-  // Close pop-up when clicking outside of the content area
-  window.addEventListener('click', function (event) {
-    document.querySelectorAll('.popup').forEach(popup => {
-      if (event.target === popup) {
-        popup.classList.remove('open');
-      }
-    });
-  });
+    // Close Popup (Click Outside)
+    if (event.target.matches('.popup')) {
+      event.target.classList.remove('open');
+    }
 
-  // Function to copy code to clipboard
-  document.querySelectorAll('.copy-btn').forEach(copyButton => {
-    copyButton.addEventListener('click', function () {
-      const codeId = this.getAttribute('data-copy');
+    // Copy to Clipboard
+    if (event.target.matches('.copy-btn')) {
+      const codeId = event.target.getAttribute('data-copy');
       const codeElement = document.getElementById(codeId);
       if (codeElement) {
         const codeText = codeElement.textContent;
@@ -158,6 +167,7 @@ document.addEventListener('DOMContentLoaded', function () {
           console.error('Failed to copy text: ', err);
         });
       }
-    });
+    }
   });
+
 });
