@@ -108,30 +108,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
   document.body.addEventListener('click', function (event) {
     // Toggle Text (Show More/Less)
+    // Toggle Text (Show More/Less)
     if (event.target.matches('.toggle-button')) {
-      // Check if this is the Copy button (which also has toggle-button class in some contexts? No, main.css says .toggle-button is separate)
-      // But wait, the copy-btn might have toggle-button class? Let's check main.css or just be specific.
-      // The toggleText button in index.html is <button class="toggle-button" ...>
-      // The copy button in research.html is <button class="copy-btn toggle-button" ...>
-      // Ah! The copy button ALSO has .toggle-button class in research.html: <button class="copy-btn toggle-button" data-copy="code19">Copy</button>
-      // This is a conflict!
-      // I should check if it is THE show more button or distinct them.
-      // The show more button calls toggleText() which toggles #text-block.
-      // The copy button copies text.
-
-      if (event.target.classList.contains('copy-btn')) {
-        // It is a copy button, handled below.
-        return;
-      }
-
-      const textBlock = document.getElementById('text-block');
-      if (textBlock) {
-        if (window.getComputedStyle(textBlock).display === 'none') {
-          textBlock.style.display = 'block';
-          event.target.textContent = 'Show Less';
-        } else {
-          textBlock.style.display = 'none';
-          event.target.textContent = 'Show More';
+      // Check if this is NOT a Copy button before toggling text
+      if (!event.target.classList.contains('copy-btn')) {
+        const textBlock = document.getElementById('text-block');
+        if (textBlock) {
+          if (window.getComputedStyle(textBlock).display === 'none') {
+            textBlock.style.display = 'block';
+            event.target.textContent = 'Show Less';
+          } else {
+            textBlock.style.display = 'none';
+            event.target.textContent = 'Show More';
+          }
         }
       }
     }
