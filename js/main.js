@@ -168,6 +168,44 @@ document.addEventListener('DOMContentLoaded', function () {
         });
       }
     }
+    // Open Global BibTex Modal
+    if (event.target.matches('.open-bibtex-modal')) {
+      const contentId = event.target.getAttribute('data-content-id');
+      const contentElement = document.getElementById(contentId);
+
+      if (contentElement) {
+        let bibtexContent = contentElement.textContent.trim();
+        // Remove the extra indentation that might be present in the HTML text content
+        // This is a simple fix to left-align the creating string
+        bibtexContent = bibtexContent.replace(/^\s+/gm, '');
+
+        const globalCodeBlock = document.getElementById('global-bibtex-code');
+
+        if (globalCodeBlock) {
+          globalCodeBlock.textContent = bibtexContent;
+          const globalModal = document.getElementById('global-bibtex-modal');
+          if (globalModal) globalModal.classList.add('open');
+        }
+      }
+    }
+
+    // Close Global Modal (Button)
+    if (event.target.matches('.close-global-modal')) {
+      const globalModal = document.getElementById('global-bibtex-modal');
+      if (globalModal) globalModal.classList.remove('open');
+    }
+
+    // Copy Global BibTex Content
+    if (event.target.matches('.copy-global-btn')) {
+      const globalCodeBlock = document.getElementById('global-bibtex-code');
+      if (globalCodeBlock) {
+        navigator.clipboard.writeText(globalCodeBlock.textContent).then(() => {
+          alert('BibTex copied to clipboard!');
+        }).catch(err => {
+          console.error('Failed to copy text: ', err);
+        });
+      }
+    }
   });
 
 });
