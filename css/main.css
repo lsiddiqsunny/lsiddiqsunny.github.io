@@ -1,8 +1,61 @@
+/* Dark mode */
+body.dark-mode {
+  background: #1a1a2e;
+  color: #e0e0e0;
+}
+
+body.dark-mode #main-container,
+body.dark-mode .container {
+  background: #1a1a2e;
+}
+
+body.dark-mode a {
+  color: #64b5f6;
+}
+
+body.dark-mode a:hover {
+  color: #90caf9;
+}
+
+body.dark-mode .text-muted {
+  color: #aaa !important;
+}
+
+body.dark-mode .table {
+  color: #e0e0e0;
+}
+
+body.dark-mode .text-block,
+body.dark-mode .popup-content {
+  background: #2a2a40;
+  border-color: #444;
+  color: #e0e0e0;
+}
+
+body.dark-mode #news::before {
+  background: #444;
+}
+
+body.dark-mode #news li b {
+  color: #64b5f6;
+}
+
+body.dark-mode footer {
+  background: #1a1a2e;
+  color: #aaa;
+}
+
+body.dark-mode .img-thumbnail {
+  border-color: #444;
+  background: #2a2a40;
+}
+
 /* Global page and element settings ----------------------------------------------------- */
 body {
   font-size: 16px;
   font-family: "Open Sans", Arial, sans-serif;
   background: #FFFFFF;
+  padding-top: 50px;
 }
 
 /* Colors */
@@ -175,6 +228,15 @@ nav {
 
 .navbar-default .navbar-nav>li>a:active {
   background: white !important;
+}
+
+.navbar-inverse .navbar-nav > li.active > a,
+.navbar-inverse .navbar-nav > li.active > a:hover,
+.navbar-inverse .navbar-nav > li.active > a:focus {
+  background: white !important;
+  color: #20364c !important;
+  font-weight: 700;
+  border-bottom: 3px solid #039BE5;
 }
 
 @media only screen and (min-width: 768px) {
@@ -426,20 +488,10 @@ dd {
   display: block;
 }
 
-/* Narrow the viewport ----------------------------------------------- */
-/* Customize container */
-@media only screen and (min-width: 767px) {
-  .container {
-    max-width: 730px;
-  }
-}
-
 /* Responsive: Portrait tablets and up */
 @media only screen and (min-width: 768px) {
-
-  /* Remove the padding we set earlier */
   .container {
-    max-width: 900px;
+    max-width: 1140px;
   }
 }
 
@@ -505,6 +557,136 @@ dd {
   opacity: .8;
 }
 
+
+/* Sidebar social icons */
+#sidebar-social {
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+#sidebar-social a {
+  color: #555;
+  margin: 0 5px;
+  transition: color 0.2s;
+}
+
+#sidebar-social a:hover {
+  color: #039BE5;
+}
+
+/* News Timeline */
+#news {
+  list-style: none;
+  padding-left: 32px;
+  margin-top: 8px;
+  position: relative;
+}
+
+#news::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 6px;
+  bottom: 6px;
+  width: 2px;
+  background: #ddd;
+}
+
+#news li {
+  position: relative;
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+
+#news li::before {
+  content: '';
+  position: absolute;
+  left: -25px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #039BE5;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px #039BE5;
+}
+
+#news li b {
+  display: block;
+  font-size: 0.78em;
+  color: #039BE5;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  margin-bottom: 2px;
+}
+
+/* Publication filter buttons */
+#pub-filters .toggle-button {
+  margin-right: 6px;
+  margin-bottom: 6px;
+  opacity: 0.55;
+}
+
+#pub-filters .toggle-button.active-filter {
+  opacity: 1;
+  box-shadow: 0 0 0 2px #0277a8;
+}
+
+/* Abstract expand/collapse */
+.abstract-wrap {
+  margin-top: 5px;
+}
+
+.abstract-toggle {
+  background: none;
+  border: none;
+  color: #1585cf;
+  cursor: pointer;
+  font-size: 0.82em;
+  padding: 2px 0;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+.abstract-toggle:hover {
+  text-decoration: underline;
+}
+
+.abstract-text {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 5px;
+  padding: 8px 12px;
+  background: #f0f7ff;
+  border-left: 3px solid #039BE5;
+  border-radius: 0 4px 4px 0;
+  line-height: 1.6;
+}
+
+body.dark-mode .abstract-text {
+  background: #1e3550;
+  color: #ccc;
+  border-left-color: #90caf9;
+}
+
+/* Citation badges from Semantic Scholar */
+.cite-badge {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 1px 7px;
+  background: #e3f2fd;
+  color: #1565c0;
+  border-radius: 10px;
+  font-size: 0.78em;
+  font-weight: 600;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+body.dark-mode .cite-badge {
+  background: #1a3a5c;
+  color: #90caf9;
+}
 
 /* Style the toggle button */
 .toggle-button {

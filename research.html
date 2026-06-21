@@ -6,7 +6,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mohammed Latif Siddiq</title>
+    <title>Research — Mohammed Latif Siddiq</title>
+    <meta name="description" content="Publications by Mohammed Latif Siddiq covering software engineering, software security, code generation, and applied machine learning. 20+ peer-reviewed papers.">
+    <meta property="og:title" content="Research — Mohammed Latif Siddiq">
+    <meta property="og:description" content="20+ peer-reviewed publications in software engineering, security, and applied LLMs.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lsiddiqsunny.github.io/research.html">
+    <meta property="og:image" content="https://lsiddiqsunny.github.io/img/msiddiq3_1.jpeg">
     <!-- Favicons -- We recommend this site for generating favicons: https://www.favicon-generator.org/ -->
     <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
@@ -51,12 +57,37 @@
             <div class="col-sm-12">
                 <h1>Research</h1>
                 <p>
-                    My research focuses on software engineering, security, and applied machine learning. Currently, I am
-                    working on the security of automated code-generation techniques. See my recent publications for more
-                    details.
+                    My research sits at the intersection of <strong>software engineering</strong>, <strong>software security</strong>, and <strong>applied LLM</strong>. I focus on (1)&nbsp;understanding and improving the security of LLM-generated code, (2)&nbsp;building evaluation frameworks and benchmarks for code generation systems, and (3)&nbsp;applying large language models to core SE tasks such as test generation, vulnerability detection, and automated repair.
+                </p>
+                <p style="margin-bottom: 8px;">
+                    <a href="https://scholar.google.com/citations?hl=en&user=oGZL0uIAAAAJ" target="_blank" class="btn btn-default btn-sm" style="margin-right:6px;margin-bottom:4px;">
+                        <i class="ai ai-google-scholar"></i>&nbsp;Google Scholar
+                    </a>
+                    <a href="https://www.semanticscholar.org/author/Mohammed-Latif-Siddiq/2091784637" target="_blank" class="btn btn-default btn-sm" style="margin-right:6px;margin-bottom:4px;">
+                        <i class="ai ai-semantic-scholar"></i>&nbsp;Semantic Scholar
+                    </a>
+                    <a href="https://dblp.org/pid/292/7076.html" target="_blank" class="btn btn-default btn-sm" style="margin-right:6px;margin-bottom:4px;">
+                        <i class="ai ai-dblp"></i>&nbsp;DBLP
+                    </a>
+                    <a href="https://openreview.net/profile?id=%7EMohammed_Latif_Siddiq1" target="_blank" class="btn btn-default btn-sm" style="margin-bottom:4px;">
+                        <i class="fas fa-file-alt"></i>&nbsp;OpenReview
+                    </a>
                 </p>
 
-                <!-- Conference Publication -->
+                <!-- Publication filter buttons -->
+                <div id="pub-filters" style="margin-bottom: 16px;">
+                    <button class="pub-filter-btn toggle-button active-filter" data-filter="all">All</button>
+                    <button class="pub-filter-btn toggle-button" data-filter="journal">Journal</button>
+                    <button class="pub-filter-btn toggle-button" data-filter="conference">Conference</button>
+                    <button class="pub-filter-btn toggle-button" data-filter="workshop">Workshop</button>
+                    <button class="pub-filter-btn toggle-button" data-filter="arxiv">arXiv</button>
+                </div>
+
+                <p id="citation-note" class="text-muted" style="font-size:0.85em;margin-top:4px;">
+                    <i class="fas fa-circle-notch fa-spin"></i> Citation counts loading from <a href="https://www.semanticscholar.org" target="_blank">Semantic Scholar</a>&hellip;
+                </p>
+
+                <div class="pub-section" data-type="journal">
                 <h3 class="push-down-4">
                     <span>Peer Reviewed Journal Publications</span>
                 </h3>
@@ -179,7 +210,9 @@
                         </script>
                     </li>
                 </ol>
-                <!-- Conference Publication -->
+                </div><!-- end journal -->
+
+                <div class="pub-section" data-type="conference">
                 <h3 class="push-down-4">
                     <span>Peer Reviewed Conference Publications</span>
                 </h3>
@@ -204,19 +237,21 @@
                     <li>
                         Nishat Raihan, <b> Mohammed Latif Siddiq</b>, Joanna C.S. Santos and Marcos Zampieri.
                         <i>Large Language Models in Computer Science Education: A Systematic Literature Review.</i>
-                        <a href="https://sigcse2025.sigcse.org" target="_blank">56<sup>th</sup> ACM Technical Symposium
-                            on Computer Science Education (SIGCSE TS 2025)</a>, March, 2025.[Acceptance Rate: 33%]
+                        <a href="https://doi.org/10.1145/3641554.3701863" target="_blank">56<sup>th</sup> ACM Technical Symposium
+                            on Computer Science Education (SIGCSETS 2025)</a>, March, 2025. Pages 938–944. [Acceptance Rate: 33%]
                         [<a href="./public/sigcse_ts25-preprint.pdf" target="_blank">Preprint</a>,
                         <button class="popup-button open-bibtex-modal" data-content-id="bibtex-1"> BibTex </button>]
 
                         <script type="text/plain" id="bibtex-1">
 @inproceedings{nishat2025llmeducation,
   author={Raihan, Nishat and Siddiq, Mohammed Latif and Santos, Joanna C. S. and Zampieri, Marcos},
-  title={Large Language Models in Computer Science Education: A Systematic Literature Review}, 
-  booktitle = {Proceedings of the 56th ACM Technical Symposium on Computer Science Education (SIGCSE TS '25)},
+  title={Large Language Models in Computer Science Education: A Systematic Literature Review},
+  booktitle = {Proceedings of the 56th ACM Technical Symposium on Computer Science Education V. 1 (SIGCSETS '25)},
+  pages = {938--944},
   numpages = {7},
+  doi = {10.1145/3641554.3701863},
   location = {Pittsburgh, Pennsylvania, United States},
-  series = {SIGCSE TS '25'}
+  series = {SIGCSETS '25}
 }
                         </script>
                     </li>
@@ -350,8 +385,9 @@
                         </script>
                     </li>
                 </ol>
+                </div><!-- end conference -->
 
-                <!-- Workshop Publication -->
+                <div class="pub-section" data-type="workshop">
                 <h3 class="push-down-4">
                     <span>Peer Reviewed Workshop and Special Track Publications</span>
                 </h3>
@@ -557,8 +593,9 @@
                         </script>
                     </li>
                 </ol>
+                </div><!-- end workshop -->
 
-                <!-- Other Publication -->
+                <div class="pub-section" data-type="arxiv">
                 <h3 class="push-down-4">
                     <span>arXiv Publications</span>
                 </h3>
@@ -582,6 +619,7 @@
                             href="https://arxiv.org/pdf/2205.02793.pdf" target="_blank">Preprint</a>]
                     </li>
                 </ol>
+                </div><!-- end arxiv -->
             </div>
         </div>
     </div>
