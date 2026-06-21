@@ -232,7 +232,11 @@ document.addEventListener('DOMContentLoaded', function () {
     'bibtex-10': 'DOI:10.1145/3639476.3639757',
     'bibtex-11': 'DOI:10.1109/NLBSE59153.2023.00018',
     'bibtex-12': 'DOI:10.1145/3549035.3561184',
-    'bibtex-13': 'DOI:10.1145/3528588.3528660'
+    'bibtex-13': 'DOI:10.1145/3528588.3528660',
+    'bibtex-7':  'DOI:10.1109/SANER50967.2021.00040',
+    'bibtex-14': 'DOI:10.1109/ICSE-Companion66252.2025.00023',
+    'bibtex-15': 'DOI:10.1109/NLBSE66842.2025.00013',
+    'bibtex-16': 'DOI:10.1007/s10844-025-00968-y'
   };
 
   var listItems = document.querySelectorAll('.pub-section ol li');
