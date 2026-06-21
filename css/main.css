@@ -185,6 +185,28 @@ blockquote footer {
   padding-bottom: 2px;
 }
 
+/* Prevent link styles from bleeding into Bootstrap buttons */
+#main-container a.btn,
+#main-container a.btn:hover,
+#main-container a.btn:focus,
+#main-container a.btn:active {
+  border-bottom: none;
+  padding-bottom: 6px;
+  text-decoration: none;
+}
+
+#main-container a.btn-primary,
+#main-container a.btn-primary:hover,
+#main-container a.btn-primary:focus {
+  color: #fff;
+}
+
+#main-container a.btn-default,
+#main-container a.btn-default:hover,
+#main-container a.btn-default:focus {
+  color: #333;
+}
+
 /* Contact info area, index.html page ------------------------------------------------- */
 #title {
   color: #20364c;
