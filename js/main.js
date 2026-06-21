@@ -211,24 +211,39 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-// Semantic Scholar citation counts
+// Semantic Scholar citation counts — keyed by bibtex ID for full coverage
 document.addEventListener('DOMContentLoaded', function () {
+  var s2ids = {
+    // Under-review journals (arXiv preprints indexed by S2)
+    'bibtex-21': 'arXiv:2601.14163',
+    'bibtex-20': 'arXiv:2601.00477',
+    'bibtex-19': 'arXiv:2512.21238',
+    'bibtex-18': 'arXiv:2512.00651',
+    // Published conference papers
+    'bibtex-1':  'DOI:10.1145/3641554.3701863',
+    'bibtex-2':  'DOI:10.1109/SCAM63643.2024.00028',
+    'bibtex-3':  'DOI:10.1109/SCAM63643.2024.00020',
+    'bibtex-4':  'DOI:10.1145/3661167.3661216',
+    'bibtex-5':  'DOI:10.1145/3643916.3644424',
+    'bibtex-6':  'DOI:10.1109/SCAM55253.2022.00014',
+    // Published workshop papers
+    'bibtex-8':  'DOI:10.1145/3691621.3694934',
+    'bibtex-9':  'DOI:10.1145/3643991.3645071',
+    'bibtex-10': 'DOI:10.1145/3639476.3639757',
+    'bibtex-11': 'DOI:10.1109/NLBSE59153.2023.00018',
+    'bibtex-12': 'DOI:10.1145/3549035.3561184',
+    'bibtex-13': 'DOI:10.1145/3528588.3528660'
+  };
+
   var listItems = document.querySelectorAll('.pub-section ol li');
   if (!listItems.length) return;
 
   var papers = [];
   listItems.forEach(function (li) {
-    var links = li.querySelectorAll('a[href]');
-    var id = null;
-    links.forEach(function (a) {
-      if (id) return;
-      var href = a.getAttribute('href') || '';
-      var doiMatch = href.match(/doi\.org\/(10\.[^/?&#\s]+(?:\/[^/?&#\s]+)?)/i);
-      if (doiMatch) { id = 'DOI:' + doiMatch[1]; return; }
-      var arxivMatch = href.match(/arxiv\.org\/abs\/([\d.]+)/i);
-      if (arxivMatch) { id = 'arXiv:' + arxivMatch[1]; }
-    });
-    if (id) papers.push({ li: li, id: id });
+    var btn = li.querySelector('.open-bibtex-modal');
+    if (!btn) return;
+    var s2id = s2ids[btn.getAttribute('data-content-id')];
+    if (s2id) papers.push({ li: li, id: s2id });
   });
 
   if (!papers.length) return;
@@ -241,7 +256,7 @@ document.addEventListener('DOMContentLoaded', function () {
   .then(function (res) { return res.json(); })
   .then(function (data) {
     var note = document.getElementById('citation-note');
-    if (note) note.innerHTML = 'Citation counts from <a href="https://www.semanticscholar.org" target="_blank">Semantic Scholar</a>. May take a moment to load.';
+    if (note) note.innerHTML = 'Citation counts via <a href="https://www.semanticscholar.org" target="_blank">Semantic Scholar</a>.';
     data.forEach(function (paper, i) {
       if (paper && typeof paper.citationCount === 'number') {
         var badge = document.createElement('span');
