@@ -715,6 +715,11 @@ body.dark-mode .cite-badge {
   color: #90caf9;
 }
 
+body.dark-mode .active-now-banner {
+  background: #0d2a3a;
+  border-left-color: #39a9db;
+}
+
 /* Style the toggle button */
 .toggle-button {
   cursor: pointer;
