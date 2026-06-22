@@ -306,6 +306,9 @@ nav {
   .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
     color: darkslategray !important;
   }
+  body {
+    padding-top: 70px;
+  }
 }
 
 .navbar-inverse {
