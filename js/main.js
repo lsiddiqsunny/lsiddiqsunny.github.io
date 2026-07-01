@@ -236,7 +236,8 @@ document.addEventListener('DOMContentLoaded', function () {
     'bibtex-7':  'DOI:10.1109/SANER50967.2021.00040',
     'bibtex-14': 'DOI:10.1109/ICSE-Companion66252.2025.00023',
     'bibtex-15': 'DOI:10.1109/NLBSE66842.2025.00013',
-    'bibtex-16': 'DOI:10.1007/s10844-025-00968-y'
+    'bibtex-16': 'DOI:10.1007/s10844-025-00968-y',
+    'bibtex-23': 'arXiv:2606.31159'
   };
 
   var listItems = document.querySelectorAll('.pub-section ol li');
